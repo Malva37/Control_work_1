@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>Lorem ipsum dolor sit amet </p>
+        <p>Lorem ipsum dolor sit amet </p>
+        <p>Lorem ipsum dolor sit amet </p>
+        <p>Lorem ipsum dolor sit amet </p>
+        <p>Lorem ipsum dolor sit amet </p>
+    </div>
+    <div class="chooseWhatYouWant">
+        <h1>Choose what you want</h1>
+        <form action="">
+            <label for="tableList">
+                <input type="radio" name='tableList' class="tableButton">table
+                <input type="radio" name='tableList' class="listButton">list
+            </label>
+        </form>
+        <form action="" class='tableBox'>
+            <div class="table InputOne">
+                <label for="countTR">Count TR: &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name='countTR' class='countTR' placeholder="Count TR:">
+                </label>
+            </div>
+            <div class="table InputTwo">
+                <label for="countTD">Count TD: &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name='countTD' class='countTD' placeholder="Count TD:">
+                </label>
+            </div>
+            <h2>Add style to your table</h2>
+            <div class="table InputThree">
+                <label for="widthOfTD">Width Of TD: &nbsp; &nbsp;
+                    <input type="text" name='widthOfTD' class='widthOfTD' placeholder="Width Of TD:">
+                </label>
+            </div>
+            <div class="table InputFour">
+                <label for="heightOfTD">Height Of TD: &nbsp; &nbsp;
+                    <input type="text" name='heightOfTD' class='heightOfTD' placeholder="Height Of TD:">
+                </label>
+            </div>
+            <div class="borderStyle">
+                <div class="border Input_1">
+                    <label for="widthOfBorder"> &nbsp; &nbsp; Width Of Border: &nbsp; &nbsp;
+                        <input type="text" name='widthOfBorder' class='widthOfBorder' placeholder="Width:">
+                    </label>
+                </div>
+                <div class="border Input_2">
+                    <label for="typeOfBorder">Type Of Border: &nbsp;
+                        <select name='typeOfBorder' class="typeOfBorder">
+                            <option value='solid' placeholder="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed ">dashed</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="border Input_3">
+                    <label for="colorOfBorder">Color Of Border &nbsp; &nbsp;
+                        <select name='colorOfBorder' class="colorOfBorder">
+                            <option value='black' placeholder="black">black</option>
+                            <option value="red ">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                        </select>
+                    </label>
+                </div>
+
+
+            </div>
+            <div class="table InputFour">
+                <input type="button" class='createTable' value="Create table">
+            </div>
+        </form>
+        <form action="" class='listBox'>
+            <div class="list Input1 ">
+                <label for="countLi">Count Li: &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name='countLi' class='countLi' placeholder="Count Li:">
+                </label>
+            </div>
+            <div class="list Input2">
+                <label for="countLi">Type of marks:
+                    <select name='typeOfMarks' class="typeOfMarks">
+                        <option value="cicle">cicle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </label>
+            </div>
+            <div class="list Input3">
+                <input type="button" class='createList' value="Create list">
+            </div>
+
+        </form>
+    </div>
+    <form action="" class='centerButtons'>
+        <input type="button" class='editButton' value="Edit">
+        <input type="button" class='styleButton' value="Style">
+    </form>
+
+    <div class="empty box"></div>
+    <div class="editBox">
+        <textarea class="insideText" rows="15" cols="165"></textarea>
+        <form action="" name='insideButtonsEdit'>
+            <input type="button" class='addButton' value="add">
+            <input type="button" class='saveButton' value="save">
+        </form>
+    </div>
+    <div class="styleBox">
+        <form action="" class='insideButtonsStyle'>
+            <div class="font size ">
+                <label for="sizeButton">Font Size: <br>
+                    <input type="radio" name='sizeButton' class="sizeButton12px" value='12px'>12px
+                    <input type="radio" name='sizeButton' class="sizeButton14px" value='14px'>14px
+                    <input type="radio" name='sizeButton' class="sizeButton16px" value='16px' checked>16px
+                    <input type="radio" name='sizeButton' class="sizeButton18px" value='18px'>18px
+                    <input type="radio" name='sizeButton' class="sizeButton20px" value='20px'>20px
+                </label>
+            </div>
+            <div class="font family">
+                <label for="familyButton">Font Family:<br>
+                    <select name='familyButton' class="familyButton">
+                        <option value='' disabled selected>Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospase">monospase</option>
+                        <option value="sens-serif">sens-serif</option>
+                    </select>
+                </label>
+            </div>
+            <div class="font colors">
+                <label for="colorButton">Colors:
+                    <div action="" name="colorButton" class='colorButton'>
+                        <input type="button" name='colorOfText' class="colorOfText" value="Color Of Text">
+                        <input type="button" name='backgroundColor' class="backgroundColor" value="Background Color">
+                    </div>
+                </label>
+            </div>
+            <div class="font style">
+                <label for="styleText">Style: <br>
+                    <input type="checkbox" name='styleText' class="boldText">Bold Text
+                    <input type="checkbox" name='styleText' class="cursiveText">Cursive Text
+                </label>
+            </div>
+        </form>
+        <div class="colorBoxBackground">
+            <div class="color Red"></div>
+            <div class="color Orange"></div>
+            <div class="color Yellow"></div>
+            <div class="color DarkGreen"></div>
+            <div class="color Green"></div>
+            <div class="color LightGreen"></div>
+            <div class="color LightBlue"></div>
+            <div class="color Blue"></div>
+            <div class="color Purple"></div>
+        </div>
+        <div class="colorBoxText">
+            <div class="color RedText"></div>
+            <div class="color OrangeText"></div>
+            <div class="color YellowText"></div>
+            <div class="color DarkGreenText"></div>
+            <div class="color GreenText"></div>
+            <div class="color LightGreenText"></div>
+            <div class="color LightBlueText"></div>
+            <div class="color BlueText"></div>
+            <div class="color PurpleText"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
